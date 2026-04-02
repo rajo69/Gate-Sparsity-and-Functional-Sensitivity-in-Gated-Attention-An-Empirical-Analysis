@@ -74,7 +74,7 @@ All results are saved to `.pkl` files in the `results/` directory. All figures a
 ## Experiment A: Does Removing Layer 0's Gate Restore the Attention Sink?
 
 <p align="center">
-<img src="figures/exp_A_attention_sink_restoration.png" width="85%">
+<img src="figures/exp_A_attention_sink_restoration.png" width="75%">
 </p>
 
 The original paper shows that gating reduces first-token attention from 46.7% to 4.8%. The intuitive hypothesis: Layer 0's gate suppresses the attention sink by turning down the volume on the first token. If that's true, forcing Layer 0's gate fully open should restore the sink.
