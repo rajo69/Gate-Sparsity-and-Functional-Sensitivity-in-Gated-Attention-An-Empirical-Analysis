@@ -17,7 +17,7 @@
 - [Experiment A: Does Removing Layer 0's Gate Restore the Attention Sink?](#experiment-a-does-removing-layer-0s-gate-restore-the-attention-sink)
 - [Experiment 1: What Do the Gates Look Like?](#experiment-1-what-do-the-gates-look-like)
   - [1A: Layer Mean and Sparsity](#1a-layer-mean-and-sparsity)
-  - [1B: Per-Head Heatmap](#1b-per-head-heatmap)
+  - [1.7B: Per-Head Heatmap](#1.7b-per-head-heatmap)
   - [1C: First-Token Suppression](#1c-first-token-suppression)
   - [1D: Layer Distributions](#1d-layer-distributions)
 - [Experiment 2: What Breaks When Gates Are Opened One Layer at a Time?](#experiment-2-what-breaks-when-gates-are-opened-one-layer-at-a-time)
@@ -132,7 +132,7 @@ Forcing Layer 0's gate open reduces first-token attention from 0.0526 to 0.0091 
 
 The key finding in the elementwise model is that dimensions are not uniformly sparse. Nearly half (48.3%) have consistently low activation across the full corpus. Over half (54.8%) actively respond to input. This within-head structure — some dimensions stably suppressed, others dynamically switching — is not reported in the original paper at any level.
 
-### 1B: Per-Head Heatmap
+### 1.7B: Per-Head Heatmap
 
 <p align="center">
 <img src="figures/exp_1B_head_heatmap.png" width="85%">
