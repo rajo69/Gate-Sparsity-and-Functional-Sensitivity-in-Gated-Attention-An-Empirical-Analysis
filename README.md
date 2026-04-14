@@ -1,6 +1,6 @@
 # Gate Sparsity and Functional Sensitivity in Gated Attention: An Empirical Analysis
 
-> **A systematic empirical study of the pretrained models from [Gated Attention for Large Language Models](https://arxiv.org/abs/2505.06708) (NeurIPS 2025 Best Paper Oral)**
+> **A systematic empirical study of the pretrained models from [Gated Attention for Large Language Models](https://arxiv.org/abs/2505.06708) (NeurIPS 2025)**
 >
 > This notebook runs forward hooks, layer ablations, baseline comparisons, and cross-domain validation over 25,600 WikiText-2 tokens to find structural properties of gated attention models that are not reported in the original paper.
 >
